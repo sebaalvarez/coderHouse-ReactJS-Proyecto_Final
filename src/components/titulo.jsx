@@ -1,9 +1,9 @@
-const titulo = () => {
+const Titulo = () => {
   return (
     <>
-      <h1> Primer componente con React JS </h1>
+      <h1> Primeros pasos con React JS </h1>
     </>
   );
 };
 
-export default titulo;
+export default Titulo;

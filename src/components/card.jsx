@@ -1,7 +1,7 @@
 import reactLogo from "../assets/react.svg";
 import "./card.css";
 
-const card = () => {
+const Card = () => {
   return (
     <>
       <div className="card">
@@ -18,4 +18,4 @@ const card = () => {
   );
 };
 
-export default card;
+export default Card;
