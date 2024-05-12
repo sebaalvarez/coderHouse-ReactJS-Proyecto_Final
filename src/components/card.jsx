@@ -1,18 +1,14 @@
-import reactLogo from "../assets/react.svg";
 import "./card.css";
 
-const Card = () => {
+const Card = ({ img, titulo, precio, desc }) => {
   return (
     <>
       <div className="card">
-        <img className="img" src={reactLogo} alt="logo react" />
-        <h3 className="titulo">Titulo Card</h3>
-        <p className="desc">
-          Descripción de Card Lorem, ipsum dolor sit amet consectetur
-          adipisicing elit. Nobis consequuntur ullam inventore voluptas, in amet
-          cum. Reprehenderit quisquam doloremque cumque modi explicabo sunt iure
-          maxime provident? Illum consequatur consectetur dolore.
-        </p>
+        <img className="img" src={img} alt="logo react" />
+        <h3 className="titulo">{titulo}</h3>
+        <p className="precio">{precio}</p>
+        <p className="desc">{desc}</p>
+        <button className="button-card">Agregar al Carrito</button>
       </div>
     </>
   );

@@ -1,0 +1,7 @@
+.titulo-home {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.1;
+  margin-block: 1.25rem;
+  color: var(--color-text-primary);
+}

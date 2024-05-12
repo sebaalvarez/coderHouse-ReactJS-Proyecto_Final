@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --color-background-primary: rgb(135, 155, 206);
+  --color-background-secondary: #eeeeee;
+  --color-text-primary: rgba(255, 255, 255, 0.87);
+  --color-text-secondary: rgb(53, 53, 54);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--color-background-secondary);
+}
