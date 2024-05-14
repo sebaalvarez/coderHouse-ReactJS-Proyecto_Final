@@ -3,10 +3,11 @@ import { ProductData } from "../data/productos";
 import Card from "./Card";
 import "./listCards.css";
 
-const ListCards = () => {
+const ListCards = ({ categoria }) => {
   return (
     <div className="listCards">
-      {ProductData.map((e, i) => (
+      {ProductData.filter((e) => e.categoria == categoria)
+      .map((e, i) => (
         <Card
           key={i}
           img={e.img}

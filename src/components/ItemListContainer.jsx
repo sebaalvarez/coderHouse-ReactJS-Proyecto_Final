@@ -1,11 +1,18 @@
 import "./itemListContainer.css";
-import SectionNovedades from "./SectionNovedades";
+import SectionPorCategoria from "./SectionPorCategoria";
 
 const ItemListContainer = ({ greeting }) => {
   return (
     <div className="itemListContainer">
       <h1 className="itemListContainer-h1">{greeting}</h1>
-      <SectionNovedades />
+      <SectionPorCategoria
+        titulo="Bebidas Alcoholicas"
+        categoria="bebida alcoholica"
+      />
+      <SectionPorCategoria
+        titulo="Bebidas sin Alcohol"
+        categoria="bebida sin alcohol"
+      />
     </div>
   );
 };
