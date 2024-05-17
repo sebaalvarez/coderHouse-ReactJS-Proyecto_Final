@@ -1,11 +1,19 @@
-.container-nav {
-  background-color: var(--color-background-primary);
+.container-nav-full {
+  background-color: rgba(78, 83, 144, 0.9);
+
+  position: fixed;
+  width: -webkit-fill-available;
+  opacity: 95%;
   margin-bottom: 20px;
+}
+.container-nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 0px 10px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .container-logo {

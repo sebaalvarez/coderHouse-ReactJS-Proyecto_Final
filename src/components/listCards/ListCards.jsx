@@ -1,13 +1,11 @@
-import { ProductData } from "../data/productos";
-
-import Card from "./Card";
 import "./listCards.css";
+import Card from "../card/Card";
 
-const ListCards = ({ categoria }) => {
+// renderiza todas las cards del array de productos enviado
+const ListCards = ({ products }) => {
   return (
     <div className="listCards">
-      {ProductData.filter((e) => e.categoria == categoria)
-      .map((e, i) => (
+      {products.map((e, i) => (
         <Card
           key={i}
           img={e.img}

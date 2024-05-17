@@ -21,14 +21,14 @@ export const ProductData = [
   },
   {
     img: corona,
-    titulo: "Cerveza Corona",
+    titulo: "Corona",
     precio: "$8.160",
     desc: "Cerveza Corona Clásica American Adjunct Lager 330 ml 6 Unidades",
     categoria: "bebida alcoholica",
   },
   {
     img: conac,
-    titulo: "Cognac Hennessy",
+    titulo: "Hennessy",
     precio: "$47.081",
     desc: "Cogñac Hennessy Very Special 700ml",
     categoria: "bebida alcoholica",
@@ -38,6 +38,6 @@ export const ProductData = [
     titulo: "Ruttini",
     precio: "$26.159",
     desc: "Vino Rutini Cabernet Malbec estuche con 2 unidades",
-    categoria: "bebida sin alcohol",
+    categoria: ["bebida alcoholica", "bebida sin alcohol"],
   },
 ];

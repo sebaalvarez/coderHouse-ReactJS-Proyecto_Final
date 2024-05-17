@@ -1,5 +1,5 @@
 import "./itemListContainer.css";
-import SectionPorCategoria from "./SectionPorCategoria";
+import SectionPorCategoria from "../sectionPorCategoria/SectionPorCategoria";
 
 const ItemListContainer = ({ greeting }) => {
   return (
@@ -12,6 +12,10 @@ const ItemListContainer = ({ greeting }) => {
       <SectionPorCategoria
         titulo="Bebidas sin Alcohol"
         categoria="bebida sin alcohol"
+      />
+      <SectionPorCategoria
+        titulo="Bebidas Energizantes"
+        categoria="bebida energizante"
       />
     </div>
   );

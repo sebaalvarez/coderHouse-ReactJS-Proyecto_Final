@@ -1,10 +1,10 @@
 import "./navBar.css";
-import logo from "../assets/logo.png";
-import CartWidget from "./CartWidget";
+import logo from "../../assets/logo.png";
+import CartWidget from "../cartWidget/CartWidget";
 
 const NavBar = ({ nomMarca }) => {
   return (
-    <>
+    <div className="container-nav-full">
       <nav className="container-nav">
         <a className="container-logo" href="#">
           <img src={logo} alt="Logo" />
@@ -28,7 +28,7 @@ const NavBar = ({ nomMarca }) => {
           </li>
         </ul>
       </nav>
-    </>
+    </div>
   );
 };
 
