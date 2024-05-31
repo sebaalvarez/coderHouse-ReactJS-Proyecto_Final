@@ -1,6 +1,36 @@
 # Tienda de Bebidas Online
 
-Desarrollo de una tienda online para la venta de bebidas alcoholicas, utilizando todo lo aprendido en las clases del curso
+Desarrollo de una tienda online para la venta de bebidas, utilizando todo lo aprendido en las clases del curso.
+
+# 2º Pre Entrega:
+
+# Consigna
+
+✅ Configura en App.js el routing usando un BrowserRouter de tu aplicación con react-router-dom
+
+✅ Deberás desarrollar la navegabilidad básica de la aplicación, demostrando que la app permite ver el catálogo, y navegar a un detalle.
+
+✅ Componentes:
+
+1. Navbar con cart
+2. Catálogo
+3. Detalle de producto
+
+# Se debe entregar
+
+✅ Rutas a configurar:
+
+- ‘/’ navega a <ItemListContainer />
+- ‘/category/:id’ navega a <ItemListContainer />
+- ‘/item/:id’ navega a <ItemDetailContainer />
+
+✅ Links a configurar:
+
+- Clickear en el brand debe navegar a ‘/’
+- Clickear un Item.js debe navegar a /item/:id
+- Clickear en una categoría del navbar debe navegar a /category/:Id
+
+---
 
 # 1º Pre Entrega:
 

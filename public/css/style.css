@@ -5,9 +5,10 @@
 }
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif !important;
   line-height: 1.5;
   font-weight: 400;
+  font-size: 14px !important;
 
   --color-background-primary: rgb(135, 155, 206);
   --color-background-secondary: #eeeeee;

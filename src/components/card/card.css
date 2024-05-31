@@ -1,54 +1,130 @@
-.card {
+.card-prod {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   background-color: rgb(254, 254, 254);
   border: 1px solid black;
   border-radius: 10px;
   color: var(--color-text-secondary);
   width: 200px;
-  height: 300px;
+  height: 330px;
   margin: auto;
   margin-bottom: 2.5rem;
 }
 
-.card-img {
+.card-prod-div-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-prod-div-compra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.card-prod-img {
   padding-top: 1.25rem;
+  height: 100px;
+}
+
+.card-prod-div-agotado {
   width: 50px;
-  height: 90px;
+  position: absolute;
 }
 
-.card-titulo {
-  margin: 5px;
+.card-prod-img-agotado {
+  width: 50px;
+  position: relative;
+  top: 0px;
+  right: -74px;
+}
+
+.card-prod-img-oferta {
+  width: 50px;
+  position: relative;
+  top: 5px;
+  right: -70px;
+}
+
+.card-prod-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-prod-titulo {
+  margin-top: 5px;
   font-weight: 800;
+  font-size: 18px;
+  width: 200px;
+  padding-inline: 10px;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: var(--color-text-secondary);
+  text-decoration: none;
 }
 
-.card-precio {
+.card-prod-precio-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-prod-precio {
   font-style: italic;
   font-weight: 600;
+  margin-bottom: 10px;
 }
 
-.card-desc {
-  margin: 5px 2px 2px 10px;
+.card-prod-precio-descuento {
+  font-style: italic;
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+
+.card-prod-precio-tachado {
+  text-decoration: line-through;
+}
+
+.card-prod-precio-oculto {
+  display: none;
+}
+
+.card-prod-desc {
+  margin: 0px 0px 0px 10px;
+  width: 200px;
   overflow: hidden;
-  font-size: 14px;
   text-overflow: ellipsis;
   text-wrap: wrap;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  padding-inline: 10px;
 }
 
-.card-button {
+.card-prod-stock {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 2px;
+}
+
+.card-prod-button {
   background-color: var(--color-background-secondary);
   border: none;
   padding: 5px;
   border-radius: 10px;
   color: black;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
-.card-button:hover {
+.card-prod-button:hover {
   background-color: var(--color-background-primary);
   color: var(--color-text-primary);
   cursor: pointer;

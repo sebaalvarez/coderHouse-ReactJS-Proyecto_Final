@@ -1,30 +1,31 @@
 import "./navBar.css";
 import logo from "../../assets/logo.png";
 import CartWidget from "../cartWidget/CartWidget";
+import { getCategoriasAll } from "../../service/categorias.service";
+import { Link } from "react-router-dom";
 
 const NavBar = ({ nomMarca }) => {
   return (
     <div className="container-nav-full">
       <nav className="container-nav">
-        <a className="container-logo" href="#">
+        <Link to={"/"} className="container-logo">
           <img src={logo} alt="Logo" />
           <p>{nomMarca}</p>
-        </a>
+        </Link>
 
         <ul className="container-menu">
           <li>
-            <a href="#">Inicio</a>
+            <Link to={"/"}>Inicio</Link>
           </li>
+          {getCategoriasAll().map((e) => (
+            <li key={e.id}>
+              <Link to={`/category/${e.id}`}>{e.titulo}</Link>
+            </li>
+          ))}
           <li>
-            <a href="#">Sobre Nosotros</a>
-          </li>
-          <li>
-            <a href="#">Categorias</a>
-          </li>
-          <li>
-            <a href="#">
+            <Link to={"/carrito"}>
               <CartWidget cant="5" />
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

@@ -5,13 +5,16 @@ import Card from "../card/Card";
 const ListCards = ({ products }) => {
   return (
     <div className="listCards">
-      {products.map((e, i) => (
+      {products.map((e) => (
         <Card
-          key={i}
+          key={e.id}
+          id={e.id}
           img={e.img}
           titulo={e.titulo}
           precio={e.precio}
+          descuento={e.descuento}
           desc={e.desc}
+          stock={e.stock}
         />
       ))}
     </div>
