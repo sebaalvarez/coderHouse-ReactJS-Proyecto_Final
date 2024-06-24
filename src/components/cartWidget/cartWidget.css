@@ -8,7 +8,7 @@
     height: 20px;
   }
 
-  & p {
+  & .cartWidget-mostrar-cantidad {
     background-color: red;
     color: var(--color-text-primary);
     font-size: 10px;

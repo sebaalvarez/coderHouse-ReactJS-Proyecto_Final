@@ -47,3 +47,9 @@ Desarrollo de una tienda online para la venta de bebidas, utilizando todo lo apr
 ✅ Crea un componente CartWidget.js que haga rendering de un ícono Cart, e inclúyelo dentro de NavBar.js para que esté visible en todo momento.
 
 ✅ Crea un componente ItemListContainer. Impórtalo dentro de App.js, y abajo de NavBar.js.
+
+crear el contexto
+crear un hook para get data firestore y ponerlo el app para poder hacer el carrito visible en toda la app
+activar el botón add to cart
+crear página para el cart que muestre lo agregado
+

@@ -6,16 +6,7 @@ const ListCards = ({ products }) => {
   return (
     <div className="listCards">
       {products.map((e) => (
-        <Card
-          key={e.id}
-          id={e.id}
-          img={e.img}
-          titulo={e.titulo}
-          precio={e.precio}
-          descuento={e.descuento}
-          desc={e.desc}
-          stock={e.stock}
-        />
+        <Card key={e.id} product={e} />
       ))}
     </div>
   );

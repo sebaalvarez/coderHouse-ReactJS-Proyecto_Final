@@ -79,3 +79,10 @@
   font-weight: 400;
   margin-bottom: 2px;
 }
+
+.card-prod-compra-div {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 20px;
+}

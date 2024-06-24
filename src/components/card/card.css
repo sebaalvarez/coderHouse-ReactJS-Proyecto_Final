@@ -122,10 +122,12 @@
   border-radius: 10px;
   color: black;
   margin-top: 5px;
+  text-decoration: none;
 }
 
 .card-prod-button:hover {
   background-color: var(--color-background-primary);
   color: var(--color-text-primary);
   cursor: pointer;
+  text-decoration: none;
 }
