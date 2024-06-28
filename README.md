@@ -2,6 +2,44 @@
 
 Desarrollo de una tienda online para la venta de bebidas, utilizando todo lo aprendido en las clases del curso.
 
+---
+
+Descripción de la funcionalidad:
+
+✅ Un usuario debe poder ingresar, navegar por los productos e ir a sus detalles.
+
+✅ Desde el detalle se debe poder ver la descripción, foto y precio e ingresarlo al carrito.
+
+✅ Una vez que el carrito tenga al menos un producto, se deberá visualizar un listado compacto de la orden con el precio total.
+
+✅ Al ingresar su nombre, apellido, teléfono e e-mail (ingresándolo dos veces para corroborar que sea correcto), debe poder proseguir con la compra.
+
+✅ Al clickear ‘realizar compra’ debe guardarse en la base de datos una orden que tenga todos los productos, la fecha y dar feedback del número de orden.
+
+## Componentes principales utilizados:
+
+- NavBar
+- CartWidget
+- ItemListContainer
+- ItemList
+- ItemDetailContainer
+- ItemDetail
+- ItemQuantitySelector
+- Description
+- AddItemButton
+- Checkout
+- Brief (detalle de compra)
+
+---
+
+---
+
+# Consignas de entregas anteriores
+
+---
+
+---
+
 # 2º Pre Entrega:
 
 # Consigna
@@ -52,4 +90,3 @@ crear el contexto
 crear un hook para get data firestore y ponerlo el app para poder hacer el carrito visible en toda la app
 activar el botón add to cart
 crear página para el cart que muestre lo agregado
-

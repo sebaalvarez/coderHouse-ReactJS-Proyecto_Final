@@ -1,9 +1,10 @@
 import "./navBar.css";
 import logo from "../../assets/logo.png";
-import loadImg from "../../assets/cargando.gif";
+
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import CartWidget from "../cartWidget/CartWidget";
+import Cargando from "../cargando/Cargando";
 import { getCategoriasAll } from "../../service/categorias.service";
 
 const NavBar = ({ nomMarca }) => {
@@ -22,9 +23,7 @@ const NavBar = ({ nomMarca }) => {
   return (
     <>
       {cargando ? (
-        <div className="div-cargando">
-          <img src={loadImg} alt="imagen cargando" />
-        </div>
+        <Cargando />
       ) : (
         <div className="container-nav-full">
           <nav className="container-nav">
@@ -45,9 +44,6 @@ const NavBar = ({ nomMarca }) => {
               <li>
                 <Link to={"/carrito"}>Carrito</Link>
               </li>
-              {/* <li>
-            <Link to={"/import"}>Importar</Link>
-          </li> */}
               <li>
                 <CartWidget />
               </li>

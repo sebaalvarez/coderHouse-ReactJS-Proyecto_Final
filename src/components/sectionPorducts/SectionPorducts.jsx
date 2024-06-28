@@ -9,7 +9,7 @@ const SectionPorducts = ({ productos, titulo }) => {
       <TituloSection nombre={titulo} />
       {
         // renderiza para el caso que SI se encuentren productos
-        productos.length > 0 ? (
+        productos?.length > 0 ? (
           <ListCards products={productos} />
         ) : (
           <p className="p-sin-productos">Productos no encontrados</p>

@@ -1,0 +1,88 @@
+.itemDetail-container {
+  margin-top: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemDetail-img-div {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+}
+
+.itemDetail-img {
+  max-height: 250px;
+  max-width: 250px;
+}
+
+.itemDetail-info {
+  padding-left: 50px;
+}
+
+.itemDetail-img-agotado {
+  width: 100px;
+  position: relative;
+  top: -200px;
+  right: 250px;
+}
+
+.itemDetail-img-oferta {
+  width: 100px;
+  position: relative;
+  top: -200px;
+  right: 250px;
+}
+
+.itemDetail-precio-div {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.itemDetail-precio {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.itemDetail-precio-descuento {
+  font-style: italic;
+  font-weight: 600;
+  padding-left: 5px;
+}
+
+.itemDetail-precio-tachado {
+  text-decoration: line-through;
+}
+
+.itemDetail-precio-oculto {
+  display: none;
+}
+
+.itemDetail-desc {
+  margin: 0px 0px 20px 0px;
+  width: 400px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-wrap: wrap;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  padding-inline: 0px;
+}
+
+.itemDetail-stock {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 2px;
+}
+
+.card-prod-compra-div {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 20px;
+}

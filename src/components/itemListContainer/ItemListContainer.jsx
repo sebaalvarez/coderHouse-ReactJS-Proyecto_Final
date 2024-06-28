@@ -1,10 +1,10 @@
 import "./itemListContainer.css";
-import loadImg from "../../assets/cargando.gif";
 
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 import SectionPorducts from "../sectionPorducts/SectionPorducts";
+import Cargando from "../cargando/Cargando";
 import {
   getProductsAll,
   getProductsCategoriaId,
@@ -26,9 +26,9 @@ const ItemListContainer = ({ greeting }) => {
 
     const productosPorCategoria = async () => {
       let a = await getCategoriaId(id);
-      setTitulo(a.titulo);
-      setData(await getProductsCategoriaId(a.nombre));
       setCargando(false);
+      a && setTitulo(a.titulo);
+      a && setData(await getProductsCategoriaId(a.nombre));
     };
 
     // Obtengo todos los productos o productos de una categoria especifica dependiendo si se pasa parametro o no
@@ -40,9 +40,7 @@ const ItemListContainer = ({ greeting }) => {
   return (
     <>
       {cargando ? (
-        <div className="div-cargando">
-          <img src={loadImg} alt="imagen cargando" />
-        </div>
+        <Cargando />
       ) : (
         <div className="itemListContainer">
           <h1 className="itemListContainer-h1">{greeting}</h1>

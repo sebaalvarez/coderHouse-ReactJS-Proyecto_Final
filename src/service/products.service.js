@@ -1,13 +1,12 @@
-// import { ProductData } from "../data/productos.mock";
 import { db } from "../firebaseConfig";
 import { getDocs, collection } from "firebase/firestore";
 
 const fetchData = async () => {
   try {
-    //el segundo argumento de la función collection es el nombre de nuestra colección
+    // el segundo argumento de la función collection es el nombre de nuestra colección
     const querySnapshot = await getDocs(collection(db, "products"));
 
-    // para obtener los documentos (que son los datos que contiene la colección) debo mapearlos de la siguiente manera
+    // obtengo los documentos de la colección
     const obtenerDocumentos = querySnapshot.docs.map((element) => ({
       id: element.id,
       ...element.data(),
