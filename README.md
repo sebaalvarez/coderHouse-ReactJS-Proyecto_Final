@@ -90,3 +90,5 @@ crear el contexto
 crear un hook para get data firestore y ponerlo el app para poder hacer el carrito visible en toda la app
 activar el botón add to cart
 crear página para el cart que muestre lo agregado
+
+---
