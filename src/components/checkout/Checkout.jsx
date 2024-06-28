@@ -37,7 +37,7 @@ const Checkout = () => {
       : generarCompra(e);
   };
 
-  const generarCompra = (e) => {
+  const generarCompra = async (e) => {
     let total = cart.reduce((acc, it) => {
       return it.cantidad * it.precio + acc;
     }, 0);
@@ -62,8 +62,9 @@ const Checkout = () => {
       detail: detail,
     };
 
-    addDoc(collection(db, "checkout"), order);
-    notify("Se realizó la compra", "ok");
+    const docRef = await addDoc(collection(db, "checkout"), order);
+
+    notify(`Se realizó la compra, Nº de pedido ${docRef.id}`, "ok");
     clear();
   };
 
